@@ -22,30 +22,31 @@ The project follows a simple Domain-Driven Design (DDD)-inspired layered structu
 ### Main project structure
 
 ```text
+
 .
 ├── API/
 │   ├── Controllers/
 │   │   └── postController.js
-│   └── Routes/
+│   └── PostRoutes/
 │       └── postRoutes.js
 ├── Application/
+│   ├── Error/
+│   │   └── AppError.js
 │   ├── createPost.js
-│   ├── getPost.js
-│   ├── getAllPosts.js
-│   └── Error/
-│       └── AppError.js
+│   ├── getAll.js
+│   └── getPost.js
 ├── Domain/
 │   └── Post.js
 ├── Infrastructure/
 │   ├── Database/
-│   │   ├── mongoconnection.js
-│   │   ├── postRepository.js
+│   │   ├── getAllRepository.js
 │   │   ├── getRepository.js
-│   │   └── getAllRepository.js
+│   │   ├── mongoconnection.js
+│   │   └── postRepository.js
 │   └── Kafka/
 │       ├── kafkaClient.js
-│       ├── postProducer.js
-│       └── postConsumer.js
+│       ├── postConsumer.js
+│       └── postProducer.js
 ├── app.js
 ├── runConsumer.js
 ├── Dockerfile
@@ -196,9 +197,9 @@ Test the following scenarios:
 
 ## Deployment
 
-The assessment requires public deployment to AWS or Google Cloud Platform. Add the deployed API URL here after deployment:
+The deployed API URL here after deployment:
 
-**Public API URL:** To be added after deployment.
+**Public API URL:**(http://51.21.243.31:3000/posts)
 
 ## Deliverables
 
