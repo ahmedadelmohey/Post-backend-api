@@ -201,6 +201,12 @@ The deployed API URL here after deployment:
 
 **Public API URL:**(http://51.21.243.31:3000/posts)
 
+## Postman Collection
+
+The Postman collection is included in the repository as `Posts_Backend_API.postman_collection.json`.
+
+Import this file into Postman to test the API endpoints.
+
 ## Deliverables
 
 - Source code and project structure
